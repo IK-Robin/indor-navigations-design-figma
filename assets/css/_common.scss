@@ -1,0 +1,119 @@
+/*common css */
+
+$font_family: "Poppins", sans-serif;
+$gray_color:#747474;
+.main_container{
+    background-color: #fff;
+    max-width: 428px;
+    width: 100%;
+    font-family: $font_family;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 28px;
+    
+}
+h3{
+    font-size: 20px;
+}
+p{font-size: 18px;}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+svg{
+    width: 100%;
+   
+}
+
+.back_btn{
+    width: 28px;
+    height: auo;
+    display: block;
+    position: relative;
+    top: 45px;
+    left: 0;
+    margin-bottom: 60px;
+}
+.dark{
+    color:#222222;
+}
+.gray_color{
+    color:$gray_color;
+}
+.buttons {
+    text-align: center;
+  
+    width: 100%;
+    display: block;
+    width: 100%;
+    background-color: #01afe5;
+    margin: auto;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+
+@media  screen  and (max-width:400px) {
+
+    h1{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h5{
+        font-size: 16px;
+    }
+    h6{
+        font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+
+    label{
+        font-size: 14px;
+      }
+      input{
+       
+            &::placeholder{
+                font-size: 12px;
+              }
+      }
+  
+    
+      .buttons{
+		font-size: 14px;
+		margin-top: 10px;
+		padding: 10px;
+	}
+  }
+  
+  @media screen and (max-width:270px) {
+   
+    h1{
+        font-size: 16px;
+    }
+   
+    h3{
+        font-size: 14px;
+    }
+    p{
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    
+    
+    
+    
+  }

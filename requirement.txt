@@ -1,0 +1,19 @@
+Below screens need to be converted into HTML.
+
+Splash-2
+Onboarding
+login
+user-profile type-web (add blue color effect when on click and on mouse event.)
+GPS integration
+Service Integration
+my profile
+Terms & conditions
+Map Updated Flow
+
+navigate-updated
+search-updated
+navigate location-updated
+get direction active
+start screen updated
+get direction active
+search-web

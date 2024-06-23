@@ -1,0 +1,142 @@
+/*  GPS integration*/
+.backgroundIMg {
+  background-image: url("../img/GPS\ integration/map_background.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main_container {
+  background-color: transparent;
+}
+.search_container {
+  position: relative;
+  margin-top: 15px;
+
+  .single_search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 11px;
+
+    align-content: center;
+    align-items: center;
+    position: relative;
+
+    .l_icon {
+      width: 46px;
+      height: 46px;
+      margin: -11px 0 0 0;
+    }
+    .h-border {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%) rotate(90deg);
+        border: 1px dashed #636262;
+        width: 50px;
+        -webkit-transform: translateX(-50%) rotate(90deg);
+        -moz-transform: translateX(-50%) rotate(90deg);
+        -ms-transform: translateX(-50%) rotate(90deg);
+        -o-transform: translateX(-50%) rotate(90deg);
+      }
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      .form-control {
+        padding: 18px 40px 18px 13px;
+
+        box-shadow: none; /* Adjust based on the width of the image */
+      }
+
+      .input-group-append {
+        position: absolute;
+        right: 10px;
+        z-index: 111;
+        top: 50%;
+        transform: translateY(-50%);
+        img.input-image {
+          height: 20px; /* Adjust based on your image size */
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.gps_modal {
+  padding: 60px 42px;
+  .modal_img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 28px;
+  }
+  .contents {
+    text-align: center;
+    h3 {
+      font-size: 20px;
+      margin-bottom: 27px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 27px;
+    }
+    a {
+      font-size: 18px;
+    }
+  }
+}
+.map_l_picker {
+  position: absolute;
+  right: 20px;
+  bottom: 24px;
+  gap: 15px;
+  .l_picker_img {
+    width: 34px;
+    height: auto;
+  }
+  .layer {
+    width: 34px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .search_container {
+    .single_search {
+      margin-bottom: 10px;
+      .l_icon {
+        width: 38px;
+        height: auto;
+        margin: -13px 0 0;
+      }
+      .mb-3 {
+        margin: 0;
+      }
+      .form-control {
+        padding: 10px !important;
+      }
+    }
+  }
+
+  .gps_modal {
+    padding: 30px 15px;
+    .modal_img {
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+    a {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+}
