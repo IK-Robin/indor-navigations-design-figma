@@ -581,6 +581,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  max-width: 428px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .main_container {
@@ -639,6 +642,14 @@ body {
 .search_container .single_search .input-group .input-group-append img.input-image {
   height: 20px; /* Adjust based on your image size */
   width: auto;
+}
+
+#gps_integration .modal-content {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .gps_modal {
