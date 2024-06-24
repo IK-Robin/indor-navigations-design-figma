@@ -8,7 +8,7 @@
   }
   .splash{
      
-    height: 926px;
+    height: 100vh;
     background: rgba(255,255,255,1);
     opacity: 1;
     position: relative;
@@ -22,7 +22,7 @@
   .background {
     max-width: 455px;
     width: 100%;
-    height: 926px;
+    height: 100vh;
     background: url("../img/Ekran\ Resmi\ 2021-08-30\ 20.26.23.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -69,15 +69,5 @@
       -ms-transform: translate(-22%, 3%);
       -o-transform: translate(-22%, 3%);
   }
-  @media screen and (max-width:452px) {
-    .antik {
-      transform: translate(-50%, 5%);
-      left: 50%;
-      bottom: 5%;
-      -webkit-transform: translate(-50%, 5%);
-      -moz-transform: translate(-50%, 5%);
-      -ms-transform: translate(-50%, 5%);
-      -o-transform: translate(-50%, 5%);
-  }
-  }
+
   

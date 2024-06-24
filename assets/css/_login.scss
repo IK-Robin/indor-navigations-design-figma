@@ -6,7 +6,7 @@ $apple: #1c1c1c;
 
 .login {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 p {
@@ -22,7 +22,7 @@ p {
     border: 1px solir #e3e2e2;
     outline: none; // Remove the outline
     box-shadow: none;
-    padding: 10px;
+    padding: 14px;
   }
   .or {
     margin: 33px auto;
@@ -34,6 +34,7 @@ p {
     margin: 0 auto 36px;
     text-align: center;
     position: relative;
+    color:#636365;
     &::after {
       content: "";
       position: absolute;
@@ -41,11 +42,12 @@ p {
       right: 15%;
       transform: translate(-15%, -50%);
       width: 89px;
-      border: 1px solid;
+      height: .5px;
       -webkit-transform: translate(20%, -50%);
       -moz-transform: translate(-15%, -50%);
       -ms-transform: translate(-15%, -50%);
       -o-transform: translate(-15%, -50%);
+      background-color:#636365;
     }
     &::before {
       content: "";
@@ -54,11 +56,12 @@ p {
       left: 15%;
       transform: translate(-15%, -15%);
       width: 89px;
-      border: 1px solid;
+      height: .5px;
       -webkit-transform: translate(-15%, -15%);
       -moz-transform: translate(-15%, -150%);
       -ms-transform: translate(-15%, -150%);
       -o-transform: translate(-15%, -150%);
+      background-color:#636365;
     }
   }
 
@@ -111,104 +114,5 @@ p {
 }
 
 
-
-@media  screen  and (max-width:400px) {
-  .login {
-    font-size: 18px;
- 
-  }
-  p {
-    font-size: 14px;
-  }
-  .login_section {
-    
-    label{
-      font-size: 14px;
-    }
-    .form_inp {
-     
-      padding: 5px;
-      &::placeholder{
-        font-size: 12px;
-      }
-    }
-   
-    .or {
-      margin: 20px auto;
-   
-    }
-    .login_option {
-      font-size: 14px;
-      margin-bottom: 20px;
-      &::after {
-        width: 50px;
-      }
-      &::before {
-        width: 50px;
-      }
-    }
-  
-    .login_options {
-      
-
-
-  
-      .optins_button {
-       
-        
-
-        padding: 10px 0;
-        text-align: center;
-        background-color: $google;
-        font-size: 12px;
-    
-    
-  
-      }
-      .facebook{
-          background: $facebook;
-          color: #fff;
-      }
-      .apple{
-          background-color: $apple;
-          color: #fff;
-      }
-    }
-    .sign_up{
-    font-size: 12px;
-      
-      span{
-          color: #FF8C42;
-      }
-    }
-  }
-  
-
-}
-
-@media screen and (max-width:270px) {
- 
-  p{
-    font-size: 12px;
-    margin-bottom: 0;
-  }
-  .login_section{
-    .login_option {
-      font-size: 12px !important;
-      margin-bottom: 14px;
-      &::after {
-        width: 25px !important;
-      }
-      &::before {
-        width: 25px !important;
-      }
-    }
-    .or{
-      margin: 10px auto;
-    }
-  }
-  
-  
-}
 
 

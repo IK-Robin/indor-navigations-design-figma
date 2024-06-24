@@ -5,17 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GPS integration</title>
     <!-- add bootstrap css  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+  
+  
     <!-- google fonts   -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- css  -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
 
@@ -78,10 +72,9 @@
                     />
                     <div
                       class="input-group-append"
-                      data-toggle="modal"
-                      data-target="#gps_integration"
+                     
                     >
-                      <img
+                      <img  data-bs-toggle="modal" data-bs-target="#gps_integration"
                         src="./assets/img/GPS integration/l-picker.png"
                         alt=""
                         class="input-image"
@@ -136,41 +129,27 @@
             <!-- modal sections  -->
             <!-- Button trigger modal -->
 
-            <!-- Modal -->
-            <div
-              class="modal fade gps_integration"
-              id="gps_integration"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="gps_integrationTitle"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered" role="document">
+           <!-- Modal -->
+           <div class="modal fade gps_integration" id="gps_integration" tabindex="-1" aria-labelledby="gps_integrationTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                  <div class="modal-body gps_modal">
-                    <div class="modal_img">
-                      <img
-                        src="./assets/img/GPS integration/marker.png"
-                        alt=""
-                      />
+                    <div class="modal-body gps_modal">
+                        <div class="modal_img">
+                            <img src="./assets/img/GPS integration/marker.png" alt="" />
+                        </div>
+                        <div class="contents">
+                            <h3>Enable Device Location</h3>
+                            <p>Enabling your device's location allows the app to provide accurate indoor positioning and seamless navigation using Google's services.</p>
+                            <a class="buttons text-decoration-none text-center" href="#">Go to settings</a>
+                        </div>
                     </div>
-                    <div class="contents">
-                      <h3>Enable Device Location</h3>
-                      <p>
-                        Enabling your device's location allows the app to
-                        provide accurate indoor positioning and seamless
-                        navigation using Google's services.
-                      </p>
-                      <a
-                        class="buttons text-decoration-none text-center"
-                        href="#"
-                        >Go to settings</a
-                      >
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
+        </div>
+
+
+
+
 
             <div class="map_l_picker d-flex flex-column">
               <div class="l_picker_img">
@@ -195,20 +174,6 @@
 
     <!-- bootstrap js 
       -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+      <script src="./assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
