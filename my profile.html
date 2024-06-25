@@ -20,39 +20,104 @@
    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head> 
   <body>
-    <div class="container">
+    <div class="container max-w  ">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 p-0">
          <div class="main_container my_profile">
-          <div class="s_title d-flex justify-content-start align-items-start">
-            <a class="back_btns" href="#" class="back_icon">
-              <img src="./assets/img/back icon.png" alt="" class="w-100" />
-            </a>
-            <h3 class="profile_title">My Profile </h3>
+          <div class="s_title d-flex justify-content-start align-items-start body-padding">
+            <div class="heder_wrap">
+              <a class="back_btnss" href="#" class="back_icon">
+                <img src="./assets/img/back icon.png" alt="" class="w-100" />
+              </a>
+              <h3 class="profile_title">My Profile </h3>
+            </div>
+            <div class="profile_img">
+              <img src="./assets/img/profile.png" alt="" class="w-100" />
+  
+              <form action="">
+                <!-- add media  -->
+                 <label for="profile_pic" class="camera_icon"><img src="./assets/img/camera.png" alt="">
+                 </label>
+                 <input type="file" id="profile_pic" name="file" />
+                 
+              </form>
+  
+            </div>
           </div>
 
-          <div class="profile_img">
-            <img src="./assets/img/profile.png" alt="" class="w-100" />
+          
+          
+        <div class="profile_details">
+          <h3>John Wick</h3>
+          <a class="text-decoration-none" href="#">Edit Profile</a>
+        </div>
 
-            <form action="">
-              <!-- add media  -->
-               <label for="profile_pic" class="camera_icon"><img src="./assets/img/camera.png" alt="">
-               </label>
-               <input type="file" id="profile_pic" name="file" />
-               
-            </form>
 
+        <div class="myPorfile_items body-pading">
+          <div class="my_p_item  d-flex justify-content-between align-content-center align-it">
+
+            <p> Contact & Support</p>
+            <div class="my_p_img">
+              <img src="./assets/img/forword.svg" alt="">
+            </div>
           </div>
-         </div>
+          <div class="my_p_item  d-flex justify-content-between align-content-center ">
+
+            <p> Notifications</p>
+            <div class="my_p_img">
+              <img src="./assets/img/forword.svg" alt="">
+            </div>
+          </div>
+          <div class="my_p_item  d-flex justify-content-between align-content-center">
+
+            <p> Legal Information</p>
+            <div class="my_p_img">
+              <img src="./assets/img/forword.svg" alt="">
+            </div>
+          </div>
+          <div class="my_p_item  d-flex justify-content-between align-content-center">
+
+            <p> My account</p>
+            <div class="my_p_img">
+              <img src="./assets/img/forword.svg" alt="">
+            </div>
+          </div>
+          <a href="#" class="buttons"> LOG OUT</a>
+        </div>
+
+
+   
+        </div>
 
         </div>
       </div>
+       <!-- home sticky nav  -->
+     <div class="home_btn_section d-flex justify-content-between align-content-center align-items-center">
+      <div class="home_btn">
+      <a href="#"> <img src="./assets/img/home/Home.svg" alt="">
+      </a>
+      </div>
+      <div class="home_btn">
+        <a href="#"><img src="./assets/img/home/home_lou.svg" alt=""></a>
+          
+      </div>
+     
+      <div class="home_btn">
+       <a href=""> <img src="./assets/img/home/Search.svg" alt=""></a>
+          
+      </div>
+      <div class="home_btn"> 
+      <a href="#"><img src="./assets/img/home/setting.svg" alt=""></a>
+          
+      </div>
+      <div class="home_btn">
+       <a href=""> <img src="./assets/img/home/My Profile.svg" alt=""></a>
+          
+      </div>
+
+     </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
+   
   </body>
 </html>

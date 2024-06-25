@@ -13,6 +13,7 @@ h1 {
 
 h3 {
   font-size: 20px;
+  font-weight: 600;
 }
 
 p {
@@ -24,13 +25,17 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 svg {
   width: 100%;
 }
 
 .back_btn {
   width: 28px;
-  height: auo;
+  height: auto;
   display: block;
   position: relative;
   top: 45px;
@@ -58,6 +63,56 @@ svg {
   font-weight: 600;
   color: #fff;
   border-radius: 8px;
+}
+
+.max-w {
+  max-width: 428px;
+  height: 100vh;
+  position: relative;
+}
+
+.body-pading {
+  padding: 0 30px;
+}
+
+.home_btn_section {
+  position: sticky;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  padding: 12px 25px;
+  max-width: 428px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 4px 0 RGBA(0, 0, 0, 0.25);
+  margin: 100px auto 0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.heder_wrap {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+  padding: 0 0 0 30px;
+}
+.heder_wrap .back_btnss {
+  width: 28px;
+  height: auto;
+  display: block;
+  position: absolute;
+}
+@media screen and (max-width: 320px) {
+  .heder_wrap {
+    padding-left: 15px;
+  }
+  .heder_wrap .back_btnss {
+    width: 20px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -159,7 +214,7 @@ svg {
 }
 .user_profile .ariving {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 55px;
 }
 .user_profile .ariving .form-check-input {
@@ -218,39 +273,30 @@ svg {
   .user_profile .ariving .arriv {
     font-size: 14px;
     color: #636365;
+    width: 130px;
+    height: 100px;
   }
   .user_profile .buttons {
     font-size: 14px;
     padding: 6px 0;
   }
 }
-@media screen and (max-width: 270px) {
-  .user_profile .ariving {
-    flex-direction: column;
-  }
+@media screen and (max-width: 300px) {
   .user_profile .ariving .arrive_container {
     text-align: center;
     padding-left: 0;
   }
   .user_profile .ariving .arriv {
-    width: 153px;
-    height: 136px;
-    text-align: center;
-    margin: 0 auto;
-    background-color: #fff;
-    border: 1px solid #ECECEC;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    width: 100px;
+  }
+  .user_profile .ariving .arriv p {
+    font-size: 12px;
   }
 }
+.mxa-w {
+  padding: 0 33px;
+}
+
 /* login css */
 .login {
   font-size: 28px;
@@ -487,6 +533,10 @@ body {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  padding: 0 20px;
+}
+.backgroundIMg .home_btn_section {
+  position: absolute;
 }
 
 .main_container {
@@ -589,8 +639,8 @@ body {
 
 .map_l_picker {
   position: absolute;
-  right: 20px;
-  bottom: 24px;
+  right: 45px;
+  bottom: 115px;
   gap: 15px;
 }
 .map_l_picker .l_picker_img {
@@ -656,27 +706,28 @@ body {
 
 /*my profile */
 .my_profile .s_title {
+  width: 100%;
   margin: 10px auto 0;
-  padding: 41px 0;
   background-color: #15B4E5;
   height: 192px;
+  position: relative;
 }
 .my_profile .s_title h3 {
   font-weight: 400;
 }
 .my_profile .profile_img {
-  width: 162px;
-  height: 162px;
+  width: 124px;
+  height: 124px;
   border-radius: 100%;
   margin: auto;
   position: absolute;
   left: 50%;
-  top: 25%;
-  transform: translate(-50%, 30%);
-  -webkit-transform: translate(-50%, 30%);
-  -moz-transform: translate(-50%, 30%);
-  -ms-transform: translate(-50%, 30%);
-  -o-transform: translate(-50%, 30%);
+  bottom: -17%;
+  transform: translate(-50%, 17%);
+  -webkit-transform: translate(-50%, 17%);
+  -moz-transform: translate(-50%, 17%);
+  -ms-transform: translate(-50%, 17%);
+  -o-transform: translate(-50%, 17%);
   box-shadow: 0 15px 40px 0 RGBA(255, 197, 41, 0.32);
 }
 .my_profile .profile_img img {
@@ -702,4 +753,71 @@ body {
 }
 .my_profile .profile_img #profile_pic {
   display: none;
+}
+.my_profile .profile_details {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 46px;
+}
+.my_profile .profile_details h3 {
+  font-size: 19px;
+}
+.my_profile .profile_details a {
+  color: #9796A1;
+  font-size: 14px;
+}
+.my_profile .myPorfile_items .my_p_item {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+  padding: 17px 25px;
+  background-color: #fff;
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 14px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.my_profile .myPorfile_items .my_p_item p {
+  margin: 0;
+}
+.my_profile .myPorfile_items .my_p_item .my_p_img {
+  width: 8px;
+  height: 13px;
+}
+@media screen and (max-width: 300px) {
+  .my_profile .myPorfile_items .my_p_item {
+    padding: 10px 25px;
+    align-items: center;
+  }
+  .my_profile .myPorfile_items .my_p_item .my_p_img {
+    height: 25px;
+  }
+}
+.my_profile .myPorfile_items .buttons {
+  margin-top: 87px;
+}
+
+@media screen and (max-width: 300px) {
+  .my_profile .s_title {
+    height: 130px;
+  }
+  .my_profile .s_title .heder_wrap {
+    gap: 24%;
+    margin-top: 30px;
+  }
+  .my_profile .s_title .profile_img {
+    width: 100px;
+    height: 100px;
+  }
+  .my_profile .s_title .profile_img .camera_icon img {
+    width: 25px;
+    height: 25px;
+  }
+  .my_profile .profile_details {
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

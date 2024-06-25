@@ -1,11 +1,14 @@
  /*my profile */
  .my_profile{
-    .s_title{
 
+    .s_title{
+width: 100%;
 margin: 10px auto 0;
-padding: 41px 0;
+
 background-color: #15B4E5;
 height: 192px;
+position: relative;
+
 
 h3{
     font-weight: 400;
@@ -14,18 +17,18 @@ h3{
     }
 
     .profile_img {
-            width: 162px;
-            height: 162px;
+            width: 124px;
+            height: 124px;
             border-radius: 100%;
             margin: auto;
             position: absolute;
             left: 50%;
-            top: 25%;
-            transform: translate(-50%,30%);
-            -webkit-transform: translate(-50%,30%);
-            -moz-transform: translate(-50%,30%);
-            -ms-transform: translate(-50%,30%);
-            -o-transform: translate(-50%,30%);
+            bottom:  -17%;
+            transform: translate(-50%,17%);
+            -webkit-transform: translate(-50%,17%);
+            -moz-transform: translate(-50%,17%);
+            -ms-transform: translate(-50%,17%);
+            -o-transform: translate(-50%,17%);
             box-shadow: 0 15px 40px 0 RGBA(255,197,41,0.32);
 
 
@@ -63,5 +66,85 @@ h3{
 
     }
 
+    .profile_details{
+      text-align: center;
+      margin-top: 90px;
+      margin-bottom: 46px;
+      h3{
+        font-size: 19px;
+      }
+      a{
+        color: #9796A1;
+        font-size: 14px;
+      }
+    }
+    .myPorfile_items{
+
+      .my_p_item{
+      font-size: 16px;
+      font-weight: 500;
+      color: #222222;
+      padding: 17px 25px;
+      background-color: #fff;
+      box-shadow: 0 10px 12px 0 rgba(0,0,0,.25);
+      margin-bottom: 14px;
+      border-radius:8px ;
+      -webkit-border-radius:8px ;
+      -moz-border-radius:8px ;
+      -ms-border-radius:8px ;
+      -o-border-radius:8px ;
+
+        p{
+          margin: 0;
+        }
+        .my_p_img{
+          width: 8px;
+          height: 13px;
+        }
+        @media  screen and (max-width:300px) {
+          padding: 10px 25px;
+          align-items: center;
+          .my_p_img{
+            height: 25px;
+          }
+        }
+      }
+      .buttons{
+        margin-top: 87px;
+      }
+
+    }
+  
 
  }
+
+
+@media screen and ( max-width:300px) {
+ .my_profile{
+  .s_title {
+
+      height: 130px;
+  .heder_wrap {
+    
+    gap: 24%;
+    margin-top: 30px;
+  }
+  .profile_img{
+    width: 100px;
+    height: 100px;
+    .camera_icon{
+      img{
+        width: 25px;
+        height: 25px;
+      }
+    } 
+  }
+  }
+  .profile_details{
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+
+ } 
+ 
+}

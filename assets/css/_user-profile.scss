@@ -77,7 +77,7 @@ $text_color:#636365;
     .ariving{
 
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-bottom: 55px;
         .form-check-input {
             display: none;
@@ -157,6 +157,8 @@ $text_color:#636365;
      
             font-size: 14px;
             color: $text_color;
+            width: 130px;
+    height: 100px;
             
         }
     }
@@ -166,38 +168,28 @@ $text_color:#636365;
     }
   }
 }
-@media screen and (max-width:270px){
+@media screen and (max-width:300px){
     .user_profile{
         .ariving{
 
-           flex-direction: column;
+           
            
             .arrive_container{
                 text-align: center;
                 padding-left: 0;
              }
             .arriv{
-                width: 153px;
-                height: 136px;
-                text-align: center;
-                margin: 0 auto;
-                background-color: #fff;
-                border: 1px solid #ECECEC;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                align-items: center;
-                border-radius: 8px;
+                width: 100px;
               
-                -webkit-border-radius: 8px;
-                -moz-border-radius: 8px;
-                -ms-border-radius: 8px;
-                -o-border-radius: 8px;
-    
-                    
+                
+                    p{
+                        font-size: 12px;
+                    }
                 
             }
         }
     }
+}
+.mxa-w{
+    padding: 0 33px;
 }

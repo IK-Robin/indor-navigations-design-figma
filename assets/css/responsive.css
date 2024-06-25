@@ -29,6 +29,37 @@
     padding: 10px;
   }
   /****************************************
+    user profile css
+    ****************************************/
+  .user_profile .info h1 {
+    font-size: 18px;
+  }
+  .user_profile .info h3 {
+    font-size: 14px;
+  }
+  .user_profile .info p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .user_profile .airport_select h5 {
+    font-size: 12px;
+  }
+  .user_profile .airport_select select {
+    font-size: 12px;
+  }
+  .user_profile .ariving {
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  .user_profile .ariving .arriv {
+    font-size: 14px;
+    color: #636365;
+  }
+  .user_profile .buttons {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+  /****************************************
     onbording css
     ****************************************/
 }
@@ -140,4 +171,35 @@
   .login_section .or {
     margin: 10px auto;
   }
+  /******************************
+  user profile
+  *******************************/
+  .user_profile .ariving {
+    flex-direction: column;
+  }
+  .user_profile .ariving .arrive_container {
+    text-align: center;
+    padding-left: 0;
+  }
+  .user_profile .ariving .arriv {
+    width: 153px;
+    height: 136px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ECECEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  /******************************
+  user profile
+  *******************************/
 }/*# sourceMappingURL=responsive.css.map */

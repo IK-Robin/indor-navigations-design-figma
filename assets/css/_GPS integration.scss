@@ -10,8 +10,11 @@
 	margin: 0 auto;
   
   position: relative; 
-
-
+  padding: 0 20px;
+  
+  .home_btn_section{
+    position: absolute;
+  }
 }
 .main_container {
   background-color: transparent;
@@ -119,10 +122,12 @@
   }
 }
 .map_l_picker {
-  position: absolute;
-  right: 20px;
-  bottom: 24px;
-  gap: 15px;
+
+    position: absolute;
+    right: 45px;
+    bottom: 115px;
+    gap: 15px;
+  
   .l_picker_img {
     width: 34px;
     height: auto;
