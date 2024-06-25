@@ -820,4 +820,17 @@ body {
     margin-top: 70px;
     margin-bottom: 30px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.terms_container .terms_details {
+  padding: 50px 30px 0 47px;
+  color: #222222;
+  font-size: 14px;
+}
+.terms_container .terms_details p {
+  margin-bottom: 20px;
+}
+.terms_container .terms_details ul li {
+  color: #222;
+}
+
+/*navigate-updated*//*# sourceMappingURL=style.css.map */
