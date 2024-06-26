@@ -19,66 +19,23 @@
 .main_container {
   background-color: transparent;
 }
-.search_container {
+
+.h-border {
   position: relative;
-  margin-top: 15px;
-
-  .single_search {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 11px;
-
-    align-content: center;
-    align-items: center;
-    position: relative;
-
-    .l_icon {
-      width: 46px;
-      height: 46px;
-      margin: -11px 0 0 0;
-    }
-    .h-border {
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -20px;
-        left: 50%;
-        transform: translateX(-50%) rotate(90deg);
-        border: 1px dashed #636262;
-        width: 50px;
-        -webkit-transform: translateX(-50%) rotate(90deg);
-        -moz-transform: translateX(-50%) rotate(90deg);
-        -ms-transform: translateX(-50%) rotate(90deg);
-        -o-transform: translateX(-50%) rotate(90deg);
-      }
-    }
-
-    .input-group {
-      display: flex;
-      align-items: center;
-      .form-control {
-        padding: 18px 40px 18px 13px;
-
-        box-shadow: none; /* Adjust based on the width of the image */
-      }
-
-      .input-group-append {
-        position: absolute;
-        right: 10px;
-        z-index: 111;
-        top: 50%;
-        transform: translateY(-50%);
-        img.input-image {
-          height: 20px; /* Adjust based on your image size */
-          width: auto;
-        }
-      }
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    border: 1px dashed #636262;
+    width: 50px;
+    -webkit-transform: translateX(-50%) rotate(90deg);
+    -moz-transform: translateX(-50%) rotate(90deg);
+    -ms-transform: translateX(-50%) rotate(90deg);
+    -o-transform: translateX(-50%) rotate(90deg);
   }
 }
-
 #gps_integration{
   .modal-content{
     max-width: 400px;

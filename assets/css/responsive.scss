@@ -81,6 +81,13 @@ $text_color:#636365;
   /****************************************
     onbording css
     ****************************************/
+
+    .search_section{
+    
+      .single_search{
+        max-width: 310px;
+      }
+    }
 }
 
 
@@ -89,6 +96,7 @@ $text_color:#636365;
     .search_container {
       .single_search {
         margin-bottom: 10px;
+        max-width: 230px;
         .l_icon {
           width: 38px;
           height: auto;
@@ -261,7 +269,20 @@ $text_color:#636365;
 
 
       /******************************
-    user profile
+    search section 
     *******************************/
+    
+    
+    .search_container {
+      .single_search {
+        margin-bottom: 10px;
+        max-width: 200px;
+     
+   
+        .form-control {
+          padding: 10px !important;
+        }
+      }
+    }
 
   }

@@ -62,11 +62,15 @@
   /****************************************
     onbording css
     ****************************************/
+  .search_section .single_search {
+    max-width: 310px;
+  }
 }
 @media screen and (max-width: 300px) {
   /*gps intgrations  */
   .search_container .single_search {
     margin-bottom: 10px;
+    max-width: 230px;
   }
   .search_container .single_search .l_icon {
     width: 38px;
@@ -200,6 +204,13 @@
     -o-border-radius: 8px;
   }
   /******************************
-  user profile
+  search section 
   *******************************/
+  .search_container .single_search {
+    margin-bottom: 10px;
+    max-width: 200px;
+  }
+  .search_container .single_search .form-control {
+    padding: 10px !important;
+  }
 }/*# sourceMappingURL=responsive.css.map */
