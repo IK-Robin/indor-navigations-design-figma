@@ -79,7 +79,7 @@ svg {
 
 .max-w {
   max-width: 428px;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -567,7 +567,7 @@ body {
 }
 
 .splash {
-  height: 100vh;
+  height: 100%;
   background: rgb(255, 255, 255);
   opacity: 1;
   position: relative;
@@ -580,7 +580,7 @@ body {
 .background {
   max-width: 455px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: url("../img/Ekran Resmi 2021-08-30 20.26.23.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -632,7 +632,7 @@ body {
 /*  GPS integration*/
 .backgroundIMg {
   background-image: url("../img/GPS integration/map_background.png");
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -907,7 +907,7 @@ body {
 .navigate-updated {
   background-image: url("../img/Map Updated Flow/map.png");
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
 }
 
@@ -1104,10 +1104,43 @@ body {
 
 /*start screen */
 .start_screen {
-  height: 95vh;
+  height: 100%;
 }
 .start_screen .search_section {
   padding-bottom: 30px;
+}
+.start_screen .marker_point {
+  width: 111px;
+  height: 111px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.start_screen .marker_point::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #26BAE7;
+  opacity: 0.2;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .start_screen .ongoing {
   width: 100%;
@@ -1156,12 +1189,15 @@ body {
 @media screen and (max-width: 310px) {
   .start_screen .ongoing .left {
     width: 80%;
-    gap: 10px;
+    gap: 5px;
   }
-  .start_screen .ongoing .left .text {
-    gap: 10px;
+  .start_screen .ongoing .left .text h4 {
+    font-size: 14px;
+  }
+  .start_screen .ongoing .left .text .time {
+    gap: 4px;
   }
   .start_screen .ongoing .left .text .time span {
-    font-size: 12px;
+    font-size: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
